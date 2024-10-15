@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Black Friday</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="container__head">
+            <div class="container__img-wrap">
+                <img src="./img/logo.svg" alt="logotype">
+            </div>
+            <nav class="container__nav">
+                <ul class="container__nav-list">
+                    <li class="container__nav-item _active">Наши предложения</li>
+                    <li class="container__nav-item">Цены</li>
+                    <li class="container__nav-burger"></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="container__main">
+            <div class="container__main-content">
+                <p class="container__desc">Воспользуйтесь выгодными предложениями от Roistat в ноябре*</p>
+                <button type="button" class="container__btn">
+                    <p class="container__btn-name">Получить выгоду</p>
+                    <span class="container__btn-arrow">
+                        <img src="./img/arrow.svg" alt="arrow">
+                    </span>
+                </button>
+            </div>
+            <p class="container__tip">*Акция не распространяется на подключение опций, лимитов, которые были подключены
+                ранее до 1.11.2023
+                Количество предложений ограничено</p>
+        </main>
+
+        <div class="container__reg-popup reg-popup">
+            <div class="reg-popup__content">
+                <div class="reg-popup__title">
+                    <h2 class="reg-popup__name">Регистрация</h2>
+                    <span class="reg-popup__close">
+                        <img src="./img/close.svg" alt="close popup">
+                    </span>
+                </div>
+                <form action="" class="reg-popup__form">
+                    <ul class="reg-popup__list">
+                        <li class="reg-popup__list-item">
+                            <input type="text" class="reg-popup__field" placeholder="Имя">
+                            <p class="reg-popup__show-error">here smth </p>
+                        </li>
+                        <li class="reg-popup__list-item">
+                            <input type="text" class="reg-popup__field" placeholder="Сайт компании">
+                            <p class="reg-popup__show-error">here smth </p>
+                        </li>
+                        <li class="reg-popup__list-item">
+                            <input type="number" class="reg-popup__field" placeholder="Телефон" required>
+                            <p class="reg-popup__show-error">here smth </p>
+                        </li>
+                    </ul>
+                    <div class="reg-popup__checking">
+                        <button type="submit" class="reg-popup__submit">Получить код</button>
+                        <div class="reg-popup__confidential">
+                            <div class="reg-popup__confidential-wrap">
+                                <input type="checkbox" id="confidential" class="reg-popup__confidential-input" required>
+                                <span class="reg-popup__input-check"></span>
+                            </div>
+                            <label for="confidential" class="reg-popup__confidential-label">Отправляя сведения через
+                                электронную форму, вы даете согласие на обработку персональных данных, в том числе сбор,
+                                хранение и передачу третьим лицам представленной вами информации на условиях <a
+                                    href="#politic">Политики обработки персональных данных</a>.</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
